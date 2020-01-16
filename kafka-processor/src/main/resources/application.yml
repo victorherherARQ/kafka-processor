@@ -1,0 +1,14 @@
+server:
+  port: '9080'
+spring:
+  cloud:
+    stream:
+      bindings:
+        input:
+          destination: ArticleInput
+          group: ArticleGroup
+          contentType: application/json
+        output:
+          destination: ArticleOutPut
+          group: ArticleGroup
+          contentType: application/json
